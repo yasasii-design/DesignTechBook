@@ -3,25 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>図版参照</title>
+    <title>図版参照｜デザインの技術書</title>
     <style>
-        /* 画面いっぱいに画像を表示し、背景を落ち着いた色にする設定 */
         body {
             margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #1a1a1a;
+            color: #ccc;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            padding: 15px;
+            background-color: #000;
+            text-align: center;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #333;
+        }
+        header a { color: #fff; text-decoration: none; font-weight: bold; }
+        main {
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-color: #1a1a1a; /* 画像のコントラストを邪魔しない暗めの背景 */
+            padding: 20px;
         }
         img {
             max-width: 100%;
             height: auto;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5); /* 境界線をわかりやすくする */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            border: 1px solid #444;
         }
+        footer {
+            padding: 20px;
+            background-color: #000;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+        .btn-buy {
+            display: inline-block;
+            background-color: #ff5a5f;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 15px;
+            transition: background 0.3s;
+        }
+        .btn-buy:hover { background-color: #ff7e82; }
+        .credit { font-size: 0.8rem; color: #888; line-height: 1.6; }
     </style>
 </head>
 <body>
-    <img src="../img/v000/sample001.png" alt="RGB版図版">
+
+<header>
+    <a href="https://yasasii-design.booth.pm/items/8186153">デザインの技術書 シリーズ</a>
+</header>
+
+<main>
+    <img src="../img/v000/sample001.png" alt="参照用RGBイメージ">
+</main>
+
+<footer>
+    <a href="https://yasasii-design.booth.pm/items/8186153" class="btn-buy">BOOTHで書籍の詳細を見る</a>
+    <div class="credit">
+        デザイン技術書 参照用RGBイメージ<br>
+        &copy; 2026 やさしいデザイン塾 くろむ
+    </div>
+</footer>
+
 </body>
 </html>
