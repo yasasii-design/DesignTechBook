@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>図版参照｜デザインの技術書</title>
+    <title>図版参照｜デザインの技術書 Vol.0 視覚伝達の基礎</title>
     <style>
         body {
             margin: 0;
@@ -23,12 +23,22 @@
             border-bottom: 1px solid #333;
         }
         header a { color: #fff; text-decoration: none; font-weight: bold; }
+        
         main {
             flex: 1;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 20px;
+            text-align: center;
+        }
+        .intro-text {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-bottom: 20px;
+            max-width: 500px;
+            line-height: 1.6;
         }
         img {
             max-width: 100%;
@@ -36,6 +46,7 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.8);
             border: 1px solid #444;
         }
+        
         footer {
             padding: 20px;
             background-color: #000;
@@ -44,33 +55,36 @@
         }
         .btn-buy {
             display: inline-block;
-            background-color: #ff5a5f;
+            background-color: #fc4d50; /* BOOTH公式カラー #fc4d50 */
             color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 24px;
+            border-radius: 4px;
             text-decoration: none;
             font-weight: bold;
             margin-bottom: 15px;
-            transition: background 0.3s;
+            transition: opacity 0.3s;
         }
-        .btn-buy:hover { background-color: #ff7e82; }
-        .credit { font-size: 0.8rem; color: #888; line-height: 1.6; }
+        .btn-buy:hover { opacity: 0.8; }
+        .credit { font-size: 0.8rem; color: #888; }
     </style>
 </head>
 <body>
 
 <header>
-    <a href="https://yasasii-design.booth.pm/items/8186153">デザインの技術書 シリーズ</a>
+    <a href="https://yasasii-design.booth.pm/items/8186153">デザインの技術書 Vol.0 視覚伝達の基礎</a>
 </header>
 
 <main>
-    <img src="../img/v000/sample001.png" alt="参照用RGBイメージ">
+    <div class="intro-text">
+        本ページは、『デザインの技術書 Vol.0 視覚伝達の基礎』の紙面内容を補完する、参照用イメージを掲載しています。
+    </div>
+
+    <img src="../img/v000/sample001.png" alt="参照用イメージ">
 </main>
 
 <footer>
     <a href="https://yasasii-design.booth.pm/items/8186153" class="btn-buy">BOOTHで書籍の詳細を見る</a>
     <div class="credit">
-        デザイン技術書 参照用RGBイメージ<br>
         &copy; 2026 やさしいデザイン塾 くろむ
     </div>
 </footer>
